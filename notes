@@ -1,0 +1,22 @@
+https://docs.splunk.com/Documentation/Splunk/8.1.0/RESTREF/RESTsearch
+https://docs.confluent.io/platform/current/kafka-rest/index.html
+
+gradle test -Dkarate.options="--tags @rest,@ddt"
+
+gradlew test -Dkarate.options="classpath:featurefiles/KarateFeature01.feature"
+
+gradlew test "-Dkarate.options=--tags @positive classpath:karate2/FeatureFiles/Karate02.feature"
+
+To run all feature files in a folder:
+=================================================================
+java -jar karate-0.9.6.jar <path_of_feature_file_folder>
+java -jar karate-0.9.6.jar -t "positive" -o "Reports" <path_of_feature_file_folder>
+
+
+
+
+* def handler = function(msg){ return msg.startsWith('hello') }
+* def socket = karate.webSocket(demoBaseUrl + '/websocket', handler)
+* socket.send('Billie')
+* def result = socket.listen(5000)
+* match result == 'hello Billie !'

@@ -18,7 +18,7 @@ Feature: Karate Test Suite 1
     * assert c == 32
 
   Scenario: Karate TestCase 3
-    This is the third test case 3
+    This is the third test case
 
     * def a = 10
     * def b = 22

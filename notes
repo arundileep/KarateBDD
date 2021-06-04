@@ -20,3 +20,8 @@ java -jar karate-0.9.6.jar -t "positive" -o "Reports" <path_of_feature_file_fold
 * socket.send('Billie')
 * def result = socket.listen(5000)
 * match result == 'hello Billie !'
+
+
+	To see html reports within jenkins dashboard,
+	In Manage Jenkins ==> Script Console ==> run following command:
+		System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "");

@@ -14,7 +14,7 @@ import java.util.Collection;
 import java.util.List;
 
 //@KarateOptions(tags = "@ddt")
-@KarateOptions(tags = "@rest,@ddt")
+//@KarateOptions(tags = "@rest,@ddt")
 //@KarateOptions(features = "classpath:featurefiles/karate06_RestApi.feature")
 //@KarateOptions(features = "classpath:featurefiles")
 //@KarateOptions(tags = "@ddt", features = "classpath:featurefiles/karate13_RestDataDriven.feature")

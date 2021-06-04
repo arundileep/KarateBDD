@@ -19,6 +19,7 @@ Feature: Karate Test Suite 1
 
   Scenario: Karate TestCase 3
     This is the third test case
+    test
 
     * def a = 10
     * def b = 22
